@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tetris — Papiro Games</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="mini-header">
+  <a class="back" href="../index.html">← Volver</a>
+  <h1>🧱 Tetris</h1>
+</header>
+<main class="game-layout">
+  <section class="stage">
+    <div class="tetris-wrap">
+      <canvas id="tetrisCanvas" class="game" width="300" height="600" style="max-width:300px"></canvas>
+      <div>
+        <div class="hud"><span>Puntos: <strong id="tScore">0</strong></span></div>
+        <div class="hud"><span>Líneas: <strong id="tLines">0</strong></span><span>Nivel: <strong id="tLevel">1</strong></span></div>
+        <p>Siguiente:</p>
+        <canvas id="nextCanvas" width="120" height="120" style="background:#223;border:3px solid #3e2f1c;border-radius:6px"></canvas>
+        <p class="msg" id="msg">Pulsa Iniciar</p>
+      </div>
+    </div>
+  </section>
+  <aside class="panel">
+    <h2>Controles</h2>
+    <p><kbd>←</kbd><kbd>→</kbd> mover · <kbd>↓</kbd> bajar · <kbd>↑</kbd>/<kbd>X</kbd> rotar · <kbd>Espacio</kbd> caída · <kbd>P</kbd> pausa</p>
+    <div class="opt-row">
+      <button class="btn" id="startBtn">Iniciar / Reiniciar</button>
+      <button class="btn sec" id="pauseBtn">Pausa</button>
+    </div>
+  </aside>
+</main>
+<script src="../js/tetris.js"></script>
+</body>
+</html>

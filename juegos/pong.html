@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pong — Papiro Games</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="mini-header">
+  <a class="back" href="../index.html">← Volver</a>
+  <h1>🏓 Pong</h1>
+</header>
+<main class="game-layout">
+  <section class="stage">
+    <div class="hud"><span>Jugador 1: <strong id="s1">0</strong></span><span>Jugador 2 / CPU: <strong id="s2">0</strong></span><span>Meta: <strong id="sGoal">5</strong> pts</span></div>
+    <canvas id="pongCanvas" class="game" width="800" height="450"></canvas>
+    <p class="msg" id="msg">Pulsa Iniciar</p>
+  </section>
+  <aside class="panel">
+    <h2>Opciones</h2>
+    <h3>Modo</h3>
+    <div class="opt-row">
+      <label><input type="radio" name="mode" value="cpu" checked> 1P vs CPU</label>
+      <label><input type="radio" name="mode" value="2p"> 2 jugadores</label>
+    </div>
+    <h3>Puntos para ganar</h3>
+    <div class="opt-row">
+      <label><input type="radio" name="goal" value="5" checked> A 5 puntos</label>
+      <label><input type="radio" name="goal" value="10"> A 10 puntos</label>
+    </div>
+    <div class="opt-row">
+      <button class="btn" id="startBtn">Iniciar</button>
+      <button class="btn sec" id="pauseBtn">Pausa</button>
+    </div>
+    <h3>Controles</h3>
+    <p>Jugador 1: <kbd>W</kbd> / <kbd>S</kbd><br>Jugador 2: <kbd>↑</kbd> / <kbd>↓</kbd><br>Pausa: <kbd>Espacio</kbd></p>
+    <p style="color:#6b5a3e;font-size:.9rem">Cambiar modo o meta reinicia el partido.</p>
+  </aside>
+</main>
+<script src="../js/pong.js"></script>
+</body>
+</html>

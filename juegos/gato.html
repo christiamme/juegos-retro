@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gato — Papiro Games</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="mini-header">
+  <a class="back" href="../index.html">← Volver</a>
+  <h1>❌ Gato</h1>
+</header>
+<main class="game-layout">
+  <section class="stage">
+    <div class="marcador">
+      <div>❌ Jugador X<strong id="wX">0</strong><small>rondas</small></div>
+      <div>⭕ Jugador O<strong id="wO">0</strong><small>rondas</small></div>
+      <div>🤝 Empates<strong id="wD">0</strong><small>rondas</small></div>
+    </div>
+    <p class="msg" id="status">Turno de X</p>
+    <div class="tablero" id="board"></div>
+    <div class="opt-row">
+      <button class="btn small" id="nextRound">Siguiente ronda</button>
+      <button class="btn sec small" id="resetMatch">Reiniciar marcador</button>
+    </div>
+  </section>
+  <aside class="panel">
+    <h2>Opciones</h2>
+    <div class="opt-row">
+      <label><input type="radio" name="gmode" value="pvp" checked> 2 jugadores</label>
+      <label><input type="radio" name="gmode" value="cpu"> Vs CPU</label>
+    </div>
+    <p style="color:#6b5a3e;font-size:.9rem">X siempre empieza cada ronda. El marcador cuenta las rondas ganadas por cada jugador y los empates.</p>
+  </aside>
+</main>
+<script src="../js/gato.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Papiro Games — Tienda</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="logo" href="index.html">📜 Papiro <span>Games</span></a>
+  <nav class="nav">
+    <a href="index.html">Tienda</a>
+    <a href="#catalogo">Biblioteca</a>
+  </nav>
+  <input id="search" class="search" type="search" placeholder="Buscar juego...">
+</header>
+
+<section class="hero">
+  <div>
+    <span class="hero-tag">Destacado</span>
+    <h1 id="heroTitle">Pong</h1>
+    <p id="heroDesc">El clásico de paletas. Reta a la CPU o a un amigo.</p>
+    <div class="hero-actions">
+      <a id="heroBtn" class="btn" href="juegos/pong.html">Jugar ahora</a>
+      <div class="hero-dots" id="heroDots"></div>
+    </div>
+  </div>
+  <div class="hero-art cover cover-pong" id="heroArt">
+    <div class="net"></div><div class="pad l"></div><div class="pad r"></div><div class="ball"></div>
+  </div>
+</section>
+
+<main class="catalogo" id="catalogo">
+  <h2>Catálogo</h2>
+  <div class="grid" id="gameGrid">
+    <article class="card" data-name="pong paletas arcade clásico">
+      <div class="cover cover-pong"><div class="net"></div><div class="pad l"></div><div class="pad r"></div><div class="ball"></div></div>
+      <div class="card-body">
+        <h3>Pong</h3>
+        <div class="tags"><span>Arcade</span><span>1-2 jugadores</span></div>
+        <p>Paletas y rebote infinito. Elige jugar a 5 o 10 puntos, contra la CPU o contra un amigo.</p>
+        <div class="card-foot"><span class="precio">Gratis</span><a class="btn small" href="juegos/pong.html">Jugar</a></div>
+      </div>
+    </article>
+    <article class="card" data-name="snake serpiente arcade">
+      <div class="cover cover-snake"><div class="snake"><div class="s"></div><div class="s"></div><div class="s head">›</div><div class="food"></div></div></div>
+      <div class="card-body">
+        <h3>Snake</h3>
+        <div class="tags"><span>Arcade</span><span>1 jugador</span></div>
+        <p>Come, crece y no te muerdas. Récord guardado en tu navegador.</p>
+        <div class="card-foot"><span class="precio">Gratis</span><a class="btn small" href="juegos/snake.html">Jugar</a></div>
+      </div>
+    </article>
+    <article class="card" data-name="gato tic tac toe tres en raya X O">
+      <div class="cover cover-gato">
+        <div class="mini-grid"><div>X</div><div>O</div><div>X</div><div>O</div><div class="win">X</div><div></div><div></div><div>O</div><div>X</div></div>
+      </div>
+      <div class="card-body">
+        <h3>Gato</h3>
+        <div class="tags"><span>Puzzle</span><span>1-2 jugadores</span></div>
+        <p>Tres en raya contra un amigo o la CPU, con marcador de rondas ganadas.</p>
+        <div class="card-foot"><span class="precio">Gratis</span><a class="btn small" href="juegos/gato.html">Jugar</a></div>
+      </div>
+    </article>
+    <article class="card" data-name="tetris bloques puzzle">
+      <div class="cover cover-tetris"><div class="tblock t1"></div><div class="tblock t2"></div><div class="tblock t3"></div><div class="tblock t4"></div></div>
+      <div class="card-body">
+        <h3>Tetris</h3>
+        <div class="tags"><span>Puzzle</span><span>1 jugador</span></div>
+        <p>Apila bloques, limpia líneas y sube de nivel.</p>
+        <div class="card-foot"><span class="precio">Gratis</span><a class="btn small" href="juegos/tetris.html">Jugar</a></div>
+      </div>
+    </article>
+  </div>
+</main>
+
+<section class="extra">
+  <div class="pergamino">
+    <h3>Bienvenido a Papiro Games</h3>
+    <p>Una pequeña tienda tallada en papiro: 4 clásicos jugables en HTML + CSS + JS, sin descargas. Elige un juego y juega al instante.</p>
+  </div>
+</section>
+
+<footer>Papiro Games — hecho con HTML, CSS y JS · 2026</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

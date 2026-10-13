@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Snake — Papiro Games</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="mini-header">
+  <a class="back" href="../index.html">← Volver</a>
+  <h1>🐍 Snake</h1>
+</header>
+<main class="game-layout">
+  <section class="stage">
+    <div class="hud"><span>Puntos: <strong id="score">0</strong></span><span>Récord: <strong id="best">0</strong></span></div>
+    <canvas id="snakeCanvas" class="game" width="400" height="400"></canvas>
+    <p class="msg" id="msg">Pulsa Iniciar</p>
+    <div class="dpad">
+      <span></span><button data-dir="up">▲</button><span></span>
+      <button data-dir="left">◀</button><button data-dir="down">▼</button><button data-dir="right">▶</button>
+    </div>
+  </section>
+  <aside class="panel">
+    <h2>Controles</h2>
+    <p><kbd>↑</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd> o <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd></p>
+    <div class="opt-row">
+      <button class="btn" id="startBtn">Iniciar / Reiniciar</button>
+    </div>
+    <p style="color:#6b5a3e;font-size:.9rem">Cada manzana suma 10 puntos y acelera un poco la serpiente.</p>
+  </aside>
+</main>
+<script src="../js/snake.js"></script>
+</body>
+</html>
